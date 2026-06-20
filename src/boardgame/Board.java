@@ -24,25 +24,25 @@ public class Board {
     }
 
     // Retorna a peça na linha e coluna dadas
-    public Piece piece(int row, int column) {
-        if (!positionExists(row, column)) {
+    public Piece piece(int row, int column){
+        if (!positionExists(row, column)){
             throw new BoardException("Posicao nao existe no tabuleiro");
         }
         return pieces[row][column];
     }
 
     // Sobrecarga do método (conforme diagrama)
-    public Piece piece(Position position) {
-        if (!positionExists(position)) {
+    public Piece piece(Position position){
+        if (!positionExists(position)){
             throw new BoardException("Posicao nao existe no tabuleiro");
         }
         return pieces[position.getRow()][position.getColumn()];
     }
 
-    // Coloca uma peça em uma posição
-    public void placePiece(Piece piece, Position position) {
+    // Coloca uma peça em uma posição finalizado
+    public void placePiece(Piece piece, Position position){
         if (thereIsAPiece(position)) {
-            throw new BoardException("Ja existe uma peca na posicao " + position);
+            throw new BoardException("Ja existe uma peca nessa posicao " + position);
         }
         pieces[position.getRow()][position.getColumn()] = piece;
         piece.position = position;
