@@ -306,8 +306,8 @@ public class ChessMatch {
 		board.placePiece(piece, new ChessPosition(column, row).toPosition());
 		piecesOnTheBoard.add(piece);
 	}
-
-	private void initialSetup() {
+// faz o colocamento inicial
+	private void initialSetup(){
 		// --- PEÇAS BRANCAS ---
 		placeNewPiece('a', 1, new Rook(board, Color.WHITE));
 		placeNewPiece('b', 1, new Knight(board, Color.WHITE));
