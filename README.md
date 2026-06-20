@@ -11,10 +11,15 @@
 
 <h2>Capaz de </h2>
 - exibir jogo no terminal
+<br>
 - criar partidas
+<br>
 - validar movimentos
+<br>
 - exibir movimentos possiveis
+<br>
 - detectar xeque e xeque mate
+<br>
 - promoção, castle e en passant
 
 <h2> Arquitetura </h2>
