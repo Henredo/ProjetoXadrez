@@ -1,7 +1,17 @@
 package boardgame;
 
-public class Piece{
+public abstract class Piece{
     protected Position positon;
+    private Board board;
+
+    public Piece(Board board){
+        this.board = board;
+        positon=null;
+    }
+
+    protected Board getBoard(){
+        return board;
+    }
 
     public boolean[][] possibleMoves(){
 
